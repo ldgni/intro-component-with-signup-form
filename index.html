@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Intro Component with Signup Form" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Intro Component with Signup Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="main__intro">
+        <h1 class="intro__title">Learn to code by watching others</h1>
+        <p class="intro__text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="main__form">
+        <p class="form__offer">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </p>
+        <form id="trial-form" class="form__trial">
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="First Name"
+            autocomplete="off"
+            class="trial__input"
+          />
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Last Name"
+            class="trial__input"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            autocomplete="off"
+            class="trial__input"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            class="trial__input"
+          />
+          <button type="submit" class="btn-submit">
+            Claim your free trial
+          </button>
+          <p class="trial__conditions">
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+:root {
+  --clr-bg: #ff7979;
+  --clr-text: #3d3b48;
+  --clr-primary: #fff;
+  --clr-secondary: #5e54a4;
+  --clr-tertiary: #38cc8b;
+
+  --ff-primary: "Poppins", sans-serif;
+  --fs-base: 0.875rem;
+  --fw-base: 600;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../assets/fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Poppins-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* GENERAL */
+
+body {
+  background-color: var(--clr-bg);
+  background-image: url(../assets/images/bg-intro-mobile.png);
+  color: var(--clr-text);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  padding: 5.5rem 1.5rem 4.25rem 1.5rem;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 65rem;
+}
+
+/* INTRO */
+
+.main__intro {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.intro__title {
+  color: var(--clr-primary);
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.01825rem;
+  margin-bottom: 1rem;
+}
+
+.intro__text {
+  color: var(--clr-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+/* FORM */
+
+.main__form {
+  flex: 1;
+}
+
+.form__offer {
+  background-color: var(--clr-secondary);
+  border-radius: 0.625rem;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: var(--clr-primary);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.01675rem;
+  padding: 1.13rem 4.16rem;
+  margin-bottom: 1.5rem;
+}
+
+.form__trial {
+  background-color: var(--clr-primary);
+  border-radius: 0.625rem;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.trial__input {
+  border-radius: 0.3125rem;
+  border: 1px solid #dedede;
+  padding: 1rem 1.21rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.01563rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.trial__input::placeholder {
+  opacity: 0.75;
+}
+
+.error {
+  background-image: url(../assets/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  border: 2px solid #ff7979;
+}
+
+.error-msg {
+  display: inline-block;
+  color: #ff7979;
+  text-align: right;
+  font-size: 0.6875rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.btn-submit {
+  background-color: var(--clr-tertiary);
+  border-radius: 0.3125rem;
+  border: none;
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+  font-size: 0.9375rem;
+  text-align: center;
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.625rem;
+  letter-spacing: 0.0625rem;
+  padding: 0.94rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 0.5rem;
+}
+
+.btn-submit:is(:active, :hover) {
+  background-color: #77e2b3;
+}
+
+.trial__conditions {
+  color: #bab7d4;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  text-align: center;
+}
+
+.trial__conditions a {
+  color: var(--clr-bg);
+  font-weight: 700;
+}
+
+@media (min-width: 45rem) {
+  body {
+    background-image: url(../assets/images/bg-intro-desktop.png);
+    padding: 0 1.5rem;
+  }
+
+  main {
+    flex-direction: row;
+    gap: 2.81rem;
+  }
+
+  .main__intro {
+    text-align: initial;
+    margin-bottom: 0;
+  }
+
+  .intro__title {
+    font-size: 3.125rem;
+    line-height: 3.4375rem;
+    letter-spacing: -0.03256rem;
+    margin-bottom: 0.69rem;
+  }
+
+  .form__trial {
+    padding: 2.5rem;
+  }
+
+  .form__trial input {
+    padding: 0.94rem 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .trial__conditions {
+    line-height: 1.625rem;
+  }
+}
