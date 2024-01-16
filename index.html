@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Intro Component with Signup Form" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Intro Component with Signup Form</title>
   </head>
   <body>
@@ -23,7 +29,8 @@
         <p class="form__offer">
           <strong>Try it free 7 days</strong> then $20/mo. thereafter
         </p>
-        <form id="trial-form" class="form__trial">
+        <form id="trial-form" class="form__trial" novalidate>
+          <label for="first-name" class="visually-hidden">First name</label>
           <input
             type="text"
             name="first-name"
@@ -32,6 +39,7 @@
             autocomplete="off"
             class="trial__input"
           />
+          <label for="last-name" class="visually-hidden">Last name</label>
           <input
             type="text"
             name="last-name"
@@ -39,6 +47,7 @@
             placeholder="Last Name"
             class="trial__input"
           />
+          <label for="email" class="visually-hidden">Email address</label>
           <input
             type="email"
             name="email"
@@ -47,6 +56,7 @@
             autocomplete="off"
             class="trial__input"
           />
+          <label for="password" class="visually-hidden">Password</label>
           <input
             type="password"
             name="password"
@@ -59,7 +69,7 @@
           </button>
           <p class="trial__conditions">
             By clicking the button, you are agreeing to our
-            <a href="#">Terms and Services</a>
+            <a href="#" class="conditions__link">Terms and Services</a>
           </p>
         </form>
       </div>
