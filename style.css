@@ -188,7 +188,7 @@ main {
 }
 
 .btn-submit {
-  background-color: #38cc8b;
+  background-color: #115f3c;
   color: #fff;
   font-size: 0.9375rem;
   font-weight: 600;
@@ -206,11 +206,11 @@ main {
 }
 
 .btn-submit:is(:hover, :focus) {
-  background-color: #77e2b3;
+  background-color: #1c9b62;
 }
 
 .trial__conditions {
-  color: #bab7d4;
+  color: #535068;
   font-size: 0.6875rem;
   line-height: 1.3125rem;
   padding: 0 0.94rem;
@@ -223,7 +223,7 @@ main {
 }
 
 .conditions__link {
-  color: #ff7979;
+  color: #8b3c3c;
   font-weight: 700;
   text-decoration: none;
 }
